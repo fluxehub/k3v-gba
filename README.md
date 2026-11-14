@@ -37,6 +37,7 @@ the relevant engine-level differences.
 - Save states and sleep
 - Fast-forward on Y, with Fastest and Stable rendering modes
 - Button turbo on X
+- Direct boot option to skip the boot splash screen
 - Display filters and high-quality audio
 - Partial two-player link-cable support
 
@@ -80,6 +81,14 @@ remove an appended footer locally in a browser; it does not upload saves.
 The **Force RTC (ROM Hacks)** setting is only for games that implement RTC but
 are not recognized automatically. It persists across games. Turn it off before
 loading games that do not need it.
+
+## Direct Boot
+
+Inspired by the "fast boot" mode on Everdrive cartridges and the "direct boot"
+mode on [open_agb_firm](https://github.com/profi200/open_agb_firm). This skips
+the splash screen on boot, and more importantly the cartridge header checks.
+Certain ROM hacks require this setting turned on to be able to run when using
+an official BIOS image, but it may cause issues in other games.
 
 ## Installation
 

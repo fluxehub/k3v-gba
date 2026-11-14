@@ -79,6 +79,16 @@ def main() -> int:
         root,
         [
             python,
+            "tests/savestates/run.py",
+            "--require-ghdl",
+            "--ghdl",
+            ghdl,
+        ],
+    )
+    run(
+        root,
+        [
+            python,
             "tests/bridge/run.py",
             "--iverilog",
             iverilog,
